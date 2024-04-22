@@ -261,5 +261,13 @@ export default {
   text-overflow: ellipsis; /* Taşan metni üç nokta (...) ile keser */
   white-space: nowrap; /* Metnin satır atlamasını engeller */
 }
-
+footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        border-end-end-radius: 0px;
+        position: absolute;
+        bottom: 0;
+      }
 </style>

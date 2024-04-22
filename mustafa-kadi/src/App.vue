@@ -8,17 +8,18 @@
         <ul v-show="isMenuOpen" class="menu-items">
           <li class="Menu-li"><router-link to="/">Ana Sayfa</router-link></li>
           <li class="Menu-li"><router-link to="/about">Hakkımda</router-link></li>
-          <li class="Menu-li"><router-link to="/technews">Teknoloji Haberleri</router-link></li>
+          <!-- <li class="Menu-li"><router-link to="/technews">Teknoloji Haberleri</router-link></li> -->
           <li class="Menu-li"><router-link to="/contact">İletişim</router-link></li>
         </ul>
         <ul class="menu-items-bigSize" v-if="!isSmallScreen && !isMenuOpen" >
           <li class="Menu-li-bigSize"><router-link to="/">Ana Sayfa</router-link></li>
           <li class="Menu-li-bigSize"><router-link to="/about">Hakkımda</router-link></li>
-          <li class="Menu-li-bigSize"><router-link to="/technews">Teknoloji Haberleri</router-link></li>
+          <!-- <li class="Menu-li-bigSize"><router-link to="/technews">Teknoloji Haberleri</router-link></li> -->
           <li class="Menu-li-bigSize"><router-link to="/contact">İletişim</router-link></li>
         </ul>
-        <button v-if="!kullanici" class="loginButton" style="margin-left:80px; margin-top: 20px;"><router-link to="/loginPage">Giriş</router-link></button>
-        <button v-else-if="kullanici==null" class="log-outButton" style="margin-left:5px; margin-top: 20px;" >Çıkış</button>
+
+        <!-- <button v-if="!kullanici" class="loginButton" style="margin-left:80px; margin-top: 20px;"><router-link to="/loginPage">Giriş</router-link></button>
+        <button v-else-if="kullanici==null" class="log-outButton" style="margin-left:5px; margin-top: 20px;" >Çıkış</button> -->
 
   
       </div>
@@ -39,12 +40,12 @@
 
 <script>
 import { RouterView } from 'vue-router';
-import getUser from './composables/getUser'
+// import getUser from './composables/getUser'
 export default {
   setup(){
 
-const {kullanici}=getUser();
-return {kullanici}
+// const {kullanici}=getUser();
+// return {kullanici}
 },
 
 
@@ -102,7 +103,7 @@ return {kullanici}
   transform: scale(1.05) rotate(-1deg);
 }
 
-.loginButton{
+/* .loginButton{
   background-color: #c2fbd7;
   border-radius: 8px;
   box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
@@ -119,9 +120,10 @@ return {kullanici}
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  max-width: 120px; /* Sabit genişlik */
-  max-height: 50px;
-}
+  max-width: 120px; //Sabit genişlik 
+max-height: 50px;
+} */ 
+
 
 .loginButton:hover {
   box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
@@ -239,10 +241,10 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px;
-  position:-ms-page;
   bottom: 0;
   width: 100%;
-  position: fixed;
+  position: fixed absolute;
+  
 }
 
 </style>
