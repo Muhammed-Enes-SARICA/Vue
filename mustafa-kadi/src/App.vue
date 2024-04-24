@@ -26,7 +26,7 @@
     </header>
 
     <!-- Ana İçerik -->
-  <main>
+  <main style="padding-bottom: 50px;">
     <router-view></router-view>
       
     </main>
@@ -243,7 +243,8 @@ footer {
   padding: 10px;
   bottom: 0;
   width: 100%;
-  position: fixed absolute;
+  height:30px ;
+  position: fixed ;
   
 }
 
