@@ -1,4 +1,4 @@
-<template>
+<template >
   <div class="about">
     <div class="container">
       <div class="profile">
@@ -48,23 +48,25 @@ export default {
   name: 'AboutView',
   data() {
     return {
-      fullName: 'John Doe',
-      occupation: 'Full Stack Developer',
-      profilePicture: require('@/assets/logo.png'),
+      fullName: 'Mustafa KADI',
+      occupation: 'BT SORUMLUSU - IT RESPONSIBLE',
+      profilePicture: require('@/assets/ContactAssets/MustafaKadı.png'),
       aboutText: `
-        Merhaba, ben John Doe. Uzun yıllardır yazılım geliştirme alanında çalışıyorum ve çeşitli projelerde deneyim kazandım.
-        Frontend ve backend teknolojilerinde uzmanlaşmış bir tam yığın geliştiriciyim ve yeni teknolojilere olan merakım hiç bitmiyor.
+      Ben Mustafa KADI. IT sektöründe geniş bir deneyime sahip bir profesyonelim. 
+      Windows Server, Sanallaştırma, DHCP Kurulumu ve Yönetimi, Active Directory Kurulumu ve Yönetimi, Network Yönetimi 
+      ve daha fazlası dahil olmak üzere bir dizi teknik beceriye sahibim. İş ortamında ekip çalışmasına uyumlu, disiplinli 
+      ve düzenli bir bireyim. Çözüm odaklı bir çalışma prensibine sahibim 
+      ve işimle ilgili bir sorun olduğunda mutlaka onu çözüme ulaştırırım.
       `,
       additionalInfo: `
-        Kullanıcı dostu arayüzler oluşturmayı seviyorum ve modern web uygulamaları geliştirmek için sürekli yeni yöntemler araştırıyorum.
-        Aynı zamanda ekip çalışmasına önem veriyor ve projelerde takım ruhunu güçlendirmek için çaba sarf ediyorum.
+      Her türlü teknik zorluğun üstesinden gelme ve çözüm odaklı bir yaklaşımla işleri tamamlama yeteneğine sahibim..
       `,
       showAdditionalInfo: false,
       skills: [
-        { name: 'HTML', level: 80, icon: require('@/assets/logo.png'), workArea: 'Web geliştirme alanında uzmanlaşmış bir tam yığın geliştirici olarak, HTML, CSS ve JavaScript teknolojileriyle modern ve kullanıcı dostu arayüzler oluşturuyorum. Ayrıca Vue.js gibi frameworkleri kullanarak dinamik web uygulamaları geliştiriyorum. Backend tarafında ise Node.js ve Express.js gibi teknolojilerle APIler oluşturuyor ve veritabanı yönetimi yapıyorum. Proje yönetimi ve ekip çalışması konularında da deneyim sahibiyim ve projelerde takım ruhunu güçlendirmeye önem veriyorum' },
-        { name: 'CSS', level: 75, icon: require('@/assets/logo1.png'), workArea: 'Web Development' },
-        { name: 'JavaScript', level: 85, icon: require('@/assets/logo2.png'), workArea: 'Web Development' },
-        { name: 'Vue.js', level: 90, icon: require('@/assets/logo3.png'), workArea: 'Web Development' }
+        { name: 'Windows Server', level:100, icon: require('@/assets/ContactAssets/İcons/windowsserver.png'), workArea: ' Windows Server 2008, 2012, 2016 ve 2019’un kurulumu ve yönetimi konusunda deneyimliyim. Günlük kontrolleri ve yedekleme kontrollerini gerçekleştirme yeteneğine sahibim.' },
+        { name: 'Ağ Yönetimi', level:100, icon: require('@/assets/ContactAssets/İcons/network.png'), workArea: 'Ağ oluşturma ve yönetme konusunda yetenekliyim. Ayrıca, Sonicwall ve Fortigate Firewall’ın kurulumu ve yönetimi konusunda deneyime sahibim. NAT, Access Rules, Security Servis, SSL VPN, VPN, Content Filter, Capture ATP ve DMZ gibi çeşitli güvenlik protokollerinin uygulanması ve yönetilmesi konusunda bilgiliyim.' },
+        { name: 'Sanallaştırma', level: 100, icon: require('@/assets/ContactAssets/İcons/virtualization.png'), workArea: 'Vmware Esxi, Vmware Workstation ve Hyper-V gibi çeşitli sanallaştırma teknolojilerinde deneyimliyim. Sanal sistemlerin kurulumu ve yönetimini gerçekleştirebilirim.' },
+        { name: 'Kurtarma Çözümleri', level: 100, icon: require('@/assets/ContactAssets/İcons/backup.png'), workArea: 'ArcServe Backup, Veeam Backup, Backup Exec ve Windows Server Backup gibi çeşitli yedekleme ve kurtarma çözümlerinde deneyimliyim. Bu, veri kaybı durumunda önemli bilgilerin hızlı ve etkili bir şekilde kurtarılmasını sağlar.' }
       ]
     };
   },
@@ -81,11 +83,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped >
 .about {
   background-color: #f9f9f9;
-  padding: 50px 0;
+  background-image: url('../assets/ContactAssets/ArkaPlan.png'); /* Arka plan resmi için URL'yi değiştirin */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  position: relative;
 }
+
 
 .container {
   max-width: 800px;
@@ -109,26 +116,30 @@ export default {
 
 .profile-info {
   text-align: left;
+  color: white;
 }
 
 .profile-name {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  
 }
 
 .profile-description {
   font-size: 1.5rem;
-  color: #666;
+  color: #92e8f3;
   margin-bottom: 20px;
 }
 
 .bio {
   margin-top: 50px;
+  color: white;
 }
 
 .section-title {
   font-size: 2rem;
   margin-bottom: 30px;
+  color: white;
 }
 
 .bio-text {
@@ -138,14 +149,24 @@ export default {
 }
 
 .toggle-button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
   cursor: pointer;
-  transition: background-color 0.3s;
-  margin-bottom: 20px;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 .toggle-button:hover {
@@ -153,13 +174,15 @@ export default {
 }
 
 .skills {
+  color: white;
   margin-top: 30px;
   margin-bottom: 80px;
   margin-left: 170px;
+ 
 }
 
 .skill {
-  display: flex;
+  display: inherit;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 35px; /* Yetenekler arasında 35px boşluk bırakır */
@@ -169,11 +192,12 @@ export default {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  color: white;
 }
 
 .skill-icon {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   background-color: #ccc;
   margin-right: 20px;
 }
@@ -182,11 +206,15 @@ export default {
   font-size: 1.2rem;
   font-weight: bold;
   margin-left: 30px;
+  padding: 15px;
+  color: white;
+  
 }
 
 .skill-level-text {
   margin-left: 10px;
   font-size: 1.1rem;
+  color: white;
 }
 
 .progress-circle-container {
@@ -205,18 +233,18 @@ export default {
   transform: translate(-50%, -50%);
   
   border-radius: 50%;
-  border: 4px solid #333;
+  border: 4px solid #000000;
   box-sizing: border-box;
   width: 100px; /* Dış çemberin boyutunu ayarlayın */
   height: 100px;
 }
 
 .about.dark .progress-circle {
-  border-color: #fff; /* Koyu arka plan için iç çerçeve rengi */
+  border-color: #000000; /* Koyu arka plan için iç çerçeve rengi */
 }
 
 .about.light .progress-circle {
-  border-color: #333; /* Açık arka plan için iç çerçeve rengi */
+  border-color: #9e9c9c; /* Açık arka plan için iç çerçeve rengi */
 }
 
 .progress-circle .percentage {
@@ -224,7 +252,7 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #333; /* Yüzdelik kısmın rengi */
+  color: #f5f3f3; /* Yüzdelik kısmın rengi */
   font-weight: bold; /* Kalınlaştırılmış font */
 }
 
@@ -235,7 +263,7 @@ export default {
   height: 100%;
   border-radius: 50%;
   border: 4px solid transparent;
-  border-top-color: rgb(94, 94, 4); /* Dolu kısmın rengi */
+  border-top-color: rgb(252, 252, 252); /* Dolu kısmın rengi */
   box-sizing: border-box;
   animation: rotateCircle linear 2s infinite; /* Animasyonu başlat */
 }
@@ -254,7 +282,6 @@ export default {
   margin-left: 20px; /* Çalışma alanı bilgisini sağ tarafta göstermek için sol boşluk bırakır */
 }
 .work-area-text {
-
   font-size: 1rem;
   max-width: 300px; /* Çalışma alanı metninin maksimum genişliğini ayarlar */
   overflow: hidden; /* Taşan metni gizler */
@@ -262,7 +289,7 @@ export default {
   white-space: nowrap; /* Metnin satır atlamasını engeller */
 }
 footer {
-        background-color: #333;
+        background-color: #4e0969;
         color: #fff;
         text-align: center;
         padding: 10px;

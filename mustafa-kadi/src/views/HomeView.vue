@@ -4,10 +4,10 @@
       <!-- İçerik alanını saran div elementi -->
       <div class="content-wrapper">
         <section class="hero">
-          <img src="../assets/logo.png" alt="Logo" style="display:block; margin: auto; padding-top: 15%" /> <!-- logo burada -->
+          <img src="../assets/ContactAssets/MustafaKadı.png" alt="Logo" style="display:block; margin: auto; padding-top: 20px; width: 200px;" /> <!-- logo burada -->
           <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">Personal İnformation</h1>
           <h2 style="color: white;">Mustafa KADI</h2>
-          <p style="padding-bottom: 15px; color: white;">Information Technology Specialist</p>
+          <p style="padding-bottom: 15px; color: white;">Information Technology Responsible</p>
           <router-link to="/about" class="btn" >Hakkımda</router-link>
         </section>
         <section class="about">
@@ -33,45 +33,17 @@
           <h2>İLETİŞİM</h2>
           <p>Benimle iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz.</p>
           <address>
-            E-posta: mustafa.kadi@kumsan.com.tr<br>
-            Telefon: +90 0536 615 53 69<br>
+            E-posta: mustafa.kadi@mustafakadi.com.tr<br>
+            Telefon: +90 0536 035 21 76<br>
           </address>
         </section>
       </div>
-      <img src="../assets/ContactAssets/Bounching.gif" alt="Your GIF" class="gif">
     </section>
   </div>
+  <img src="../assets/ContactAssets/topographi.gif" alt="Your GIF" class="gif">
 </template>
 
 <script>
-export default {
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  beforeUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-  methods: {
-    handleScroll() {
-      const gif = this.$refs.gif;
-      
-      // Gif referansını kontrol et
-      if (gif) {
-        // Sayfanın yukarı veya aşağı doğru kaydırıldığını kontrol et
-        if (window.scrollY > this.prevScrollY) {
-          // Aşağı kaydırıldıysa
-          gif.style.top = `${gif.offsetTop + 10}px`;
-        } else {
-          // Yukarı kaydırıldıysa
-          gif.style.top = `${gif.offsetTop - 10}px`;
-        }
-        
-        // Son scroll pozisyonunu güncelle
-        this.prevScrollY = window.scrollY;
-      }
-    }
-  }
-}
 </script>
 <style scoped>
 /* Genel stiller */
@@ -186,22 +158,38 @@ header {
   text-decoration: none;
 }
 
-@keyframes bounce {
+/* @keyframes bounce {
   0% { transform: translateY(0); }
-  50% { transform: translateY(-300px); }
-  75%{transform: translateY(300px);}
+  50% { transform: translateY(-100px); }
+  75%{transform: translateY(100px);}
   100% { transform: translateY(0); }
+} */
+
+/* .gif {
+  height: 200px;
+  width: 200px;
+  position: relative; /* Değişiklik: Gif'in sabit kalması için 
+  top: 50%; /* Değişiklik: Yüksekliğin yarısı kadar yukarıya yerleştir 
+  right: 10%; /* Değişiklik: Sağdan 10% içeri 
+  transform: translate(0, -50%);
+  z-index: -1;
+   animation: bounce 3s infinite; 
+}*/
+
+.about-content {
+  max-width: 35%; /* Hakkımda metninin genişliğini ayarla */
+  float: left; /* Metni sola yasla */
 }
 
 .gif {
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  transform: translate(0, -50%);
-  animation: bounce 2s infinite; /* Yineleyen bir animasyon uygula */
+  height: 200px;
+  width: 200px;
+  position: fixed; /* Gif'in sabit kalması için */
+  top: 50%; /* Yüksekliğin yarısı kadar yukarıya yerleştir */
+  right: 20%; /* Sağdan boşluk bırak */
+  padding: 15px;
 }
+
 
 .about,
 .services,
