@@ -15,7 +15,7 @@
       <h2>Phone</h2>
       <p class="kucuk-font">+90 0536 035 21 76</p>
       <h2>Email</h2>
-      <p class="kucuk-font">mustafa.kadi@mustafakadi.com.tr</p>
+      <p class="kucuk-font">mustafakadi@mustafakadi.com.tr</p> 
     </div>
   </div>
 </template>

@@ -33,7 +33,7 @@
           <h2>İLETİŞİM</h2>
           <p>Benimle iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz.</p>
           <address>
-            E-posta: mustafa.kadi@mustafakadi.com.tr<br>
+            E-posta: mustafakadi@mustafakadi.com.tr<br>
             Telefon: +90 0536 035 21 76<br>
           </address>
         </section>

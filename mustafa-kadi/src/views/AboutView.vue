@@ -89,7 +89,7 @@ export default {
   background-image: url('../assets/ContactAssets/ArkaPlan.png'); /* Arka plan resmi için URL'yi değiştirin */
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 15%;
   position: relative;
 }
 
